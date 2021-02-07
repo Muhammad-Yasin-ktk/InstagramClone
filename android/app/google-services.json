@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "605343535182",
+    "project_id": "blogapp-caf65",
+    "storage_bucket": "blogapp-caf65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605343535182:android:81ffa5724f7296e7c9b31f",
+        "android_client_info": {
+          "package_name": "com.example.blog_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605343535182-j3v75t0v0berss3so7l5u8ou4rf3tpnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6a5rXkcTN26WkCL_xD50P6GlTPTy3Oy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605343535182-j3v75t0v0berss3so7l5u8ou4rf3tpnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605343535182:android:ff2da466fade1287c9b31f",
+        "android_client_info": {
+          "package_name": "com.example.instagramclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605343535182-j3v75t0v0berss3so7l5u8ou4rf3tpnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6a5rXkcTN26WkCL_xD50P6GlTPTy3Oy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605343535182-j3v75t0v0berss3so7l5u8ou4rf3tpnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
