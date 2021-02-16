@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:instagramclone/widgets/HeaderWidget.dart';
+import 'package:instagramclone/widgets/ProgressWidget.dart';
 
 class NotificationsPage extends StatefulWidget {
   @override
@@ -8,7 +10,10 @@ class NotificationsPage extends StatefulWidget {
 class _NotificationsPageState extends State<NotificationsPage> {
   @override
   Widget build(BuildContext context) {
-    return Text('Here goes Activity Feed Page');
+    return Scaffold(
+      appBar: header(context,strTitle: 'Notifiacation'),
+      body: linearProgress(),
+    );
   }
 }
 

@@ -1,9 +1,22 @@
 import 'package:flutter/material.dart';
 
 circularProgress() {
-  return Text("circular progress");
+  return Container(
+    child: Center(
+      child: CircularProgressIndicator(
+        valueColor: AlwaysStoppedAnimation(Colors.lightGreenAccent),
+      ),
+    ),
+  );
 }
 
 linearProgress() {
-  return Text("linear progress");
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: 40),
+    child: Center(
+      child: LinearProgressIndicator(
+        valueColor: AlwaysStoppedAnimation(Colors.lightGreenAccent),
+      ),
+    ),
+  );
 }

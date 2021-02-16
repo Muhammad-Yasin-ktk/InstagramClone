@@ -1,6 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+import 'package:instagramclone/pages/home_screen.dart';
+import 'package:instagramclone/pages/signin_screen.dart';
+import 'package:instagramclone/services/auth.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -19,14 +26,17 @@ class MyApp extends StatelessWidget {
         cardColor: Colors.white70,
         accentColor: Colors.black,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Welcome to Coding Cafe', style: TextStyle(color: Colors.white, fontSize: 20.0, fontWeight: FontWeight.bold),),
-        ),
-        body: Center(
-          child: Text('Hello World', style: TextStyle(color: Colors.white, fontSize: 30.0,),),
-        ),
-      ),
+      home:  FutureBuilder(
+        future: AuthMethods().getCurrentUser(),
+        builder: (ctx,userSnapshot){
+          if(userSnapshot.hasData){
+            return HomeScreen();
+          }
+          else{
+            return SignInScreen();
+          }
+        },
+      )
     );
   }
 }

@@ -37,10 +37,12 @@ dependencies:
   cached_network_image:
   firebase_auth: ^0.20.0+1
   geolocator: ^6.2.0
+  geocoder: ^0.2.1
   uuid: ^2.2.2
   path_provider: ^0.5.0+1
   firebase_messaging: ^4.0.0+1
   firebase_storage: ^7.0.0
+  firebase_core : ^0.7.0
   flutter_svg:
 
 dev_dependencies:
